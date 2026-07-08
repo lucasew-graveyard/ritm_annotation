@@ -8,7 +8,6 @@ from pathlib import Path
 
 import numpy as np
 import torch
-import itertools
 from tqdm.auto import tqdm
 
 logger = logging.getLogger(__name__)
