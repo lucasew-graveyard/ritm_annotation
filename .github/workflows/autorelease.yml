@@ -94,7 +94,7 @@ jobs:
 
     - name: Upload repository state
       if: steps.pr_check.outputs.skip != 'true'
-      uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7
+      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
       with:
         name: repository-state
         path: |
@@ -132,7 +132,7 @@ jobs:
       run: mise run ci-build:flatpak
 
     - name: Upload Flatpak as artifact
-      uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7
+      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
       with:
         name: ritm_annotation-flatpak
         path: ritm_annotation.flatpak
@@ -196,7 +196,7 @@ jobs:
       run: mise run ci-build:wheel
 
     - name: Upload wheel
-      uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7
+      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
       with:
         name: python-wheel
         path: dist/*.whl
